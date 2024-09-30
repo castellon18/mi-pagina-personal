@@ -1,0 +1,15 @@
+<h2>Portafolio</h2>
+<p>Aquí podrás mostrar tus proyectos y trabajos realizados. Puedes incluir enlaces y descripciones de cada uno.</p>
+
+@for (item of projects; track $index) {
+    <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ item.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ item.description }}</p>
+          <a mat-button href="{{ item.link }}" target="_blank">Ver proyecto</a>
+        </mat-card-content>
+      </mat-card>
+}
+  
